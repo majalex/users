@@ -1,0 +1,23 @@
+<section>
+    <h1>Users data</h1>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Street</th>
+            <th>Suite</th>
+            <th>City</th>
+            <th>Zip-code</th>
+            <th>website</th>
+        </tr>
+        {{#each users}}
+        <tr>
+            <td>{{name}}</td>
+            <td>{{address.street}}</td>
+            <td>{{address.suite}}</td>
+            <td>{{address.city}}</td>
+            <td>{{address.zipcode}}</td>
+            <td><a href="https://www.{{website}}" target="_blank">{{website}}</a></td>
+        </tr>
+        {{/each}}
+    </table>
+</section>
